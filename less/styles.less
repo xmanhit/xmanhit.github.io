@@ -11,6 +11,7 @@
 @light-green-shadow-center2px: 0 0 2px rgba(129, 192, 30, 0.16);
 
 @dark: #222222;
+@gray: rgba(128, 128, 128, .5);
 
 @dark-opacity20: rgba(0, 0, 0, 0.2);
 @dark-opacity40: rgba(0, 0, 0, 0.4);
@@ -281,6 +282,7 @@ body {
                 box-shadow: @dark-shadow-center;
                 background-size: cover;
                 background-position: center;
+                background-color: @gray;
                 width: 88px;
                 min-width: 88px;
                 height: 60px;
@@ -417,7 +419,7 @@ body {
                 height: 100%;
                 background-size: cover;
                 background-position: center;
-                background-color: #525252;
+                background-color: @gray;
 
                 &::before {
                   content: "";
@@ -611,6 +613,7 @@ body {
                   position: relative;
                   background-size: cover;
                   background-position: center;
+                  background-color: @gray;
                   border-radius: 5px;
 
                   .top {
@@ -769,6 +772,7 @@ body {
                 .background-image {
                   background-size: cover;
                   background-position: center;
+                  background-color: @gray;
                   height: 100%;
 
                   &::before {
