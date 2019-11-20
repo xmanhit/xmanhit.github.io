@@ -1,1 +1,565 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Trang Chủ</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="fonts/setup_fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+	<link rel="stylesheet/less" type="text/css" href="less/theme.less" />
+	<link rel="stylesheet/less" type="text/css" href="less/reponsive.less" />
+
+	<script src="less/scripts/less.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body class="dark-theme">
+	<header class="header">
+		<figure class="logo"><img src="images/favicon.png" alt="logo"></figure>
+
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<nav id="main-menu">
+			<div class="search-box">
+				<input class="searchbox" type="text" placeholder="Tìm kiếm">
+				<button class="searchsubmit" type="submit"><i class="fas fa-search"></i></button>
+			</div>
+			<ul class="menu">
+				<li class="item active">
+					<a href="/Frontend/index.html">TRANG CHỦ</a>
+				</li>
+				<li class="item">
+					<a href="/Frontend/category.html">THỂ LOẠI <i class="fas fa-angle-down"></i></a>
+					<ul class="sub-menu">
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/hanh_dong.jpg');"></div>Hành động
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/khoa_hoc_vien_tuong.jpg');"></div>
+								Khoa học viễn tưởng
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/lang_man.jpg');"></div>Lãng mạn
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/kinh_di.jpg');"></div>Kinh dị
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/vo_thuat.jpg');"></div>Võ thuật
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/hai_huoc.jpg');"></div>Hài hước
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/truong_hoc.jpg');"></div>Trường học
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/trinh_tham.jpg');"></div>Trinh thám
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/phieu_luu.jpg');"></div>Phiêu lưu
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/sieu_nhien.jpg');"></div>Siêu nhiên
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/doi_thuong.jpg');"></div>Đời thường
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/gia_tuong.jpg');"></div>Giả tưởng
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/nguoi_may.jpg');"></div>Người máy
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/tro_choi.jpg');"></div>Trò chơi
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/the_thao.jpg');"></div>Thể thao
+							</a>
+						</li>
+						<li class="item">
+							<a href="#">
+								<div class="background-image" style="background-image: url('images/kich_tinh.jpg');"></div>Kịch tính
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="item">
+					<a href="#">MÙA XUÂN</a>
+				</li>
+				<li class="item">
+					<a href="#">MÙA HẠ</a>
+				</li>
+				<li class="item">
+					<a href="#">MÙA THU</a>
+				</li>
+				<li class="item">
+					<a href="#">MÙA ĐÔNG</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="search-box">
+			<input class="searchbox" type="text" placeholder="Tìm kiếm">
+			<button class="searchsubmit" type="submit"><i class="fas fa-search"></i></button>
+		</div>
+
+		<div class="group-user">
+			<figure class="privacy-policy">
+				<i class="far fa-question-circle"></i>
+			</figure>
+			<figure class="set-theme">
+				<i class="far fa-sun"></i>
+			</figure>
+
+			<figure class="avatar"><img src="images/favicon.png" alt="avatar"></figure>
+		</div>
+
+	</header>
+
+	<main class="container">
+		<section class="top-content">
+			<div class="frame">
+				<article class="aspect-ratio">
+					<div class="content">
+						<a href="#">
+							<div class="content-left">
+								<div class="background-image" style="background-image: url('images/IMAGE_TOP_1.png');">
+									<div class="details">
+										<div class="group-top">
+
+											<div class="button-play">
+												<i class="far fa-play-circle"></i>
+											</div>
+											<div class="views">
+												<div class="category">Hành Động, Phưu Lưu, Kịch Tính</div>
+												<div class="number-like">888,888 lượt thích</div>
+											</div>
+
+										</div>
+										<div class="group-bottom">
+											<div class="top">TOP
+												<span>1</span>
+											</div>
+											<div class="number-views">
+												<span class="number">100,000</span> lượt xem</div>
+											<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</article>
+			</div>
+			<div class="frame">
+				<aside class="aspect-ratio">
+					<div class="content list">
+						<div class="content-right">
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>2</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>3</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>4</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>5</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>6</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>7</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>8</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>9</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/IMAGE_TOP_N.png');">
+										<div class="top">TOP
+											<span>10</span>
+										</div>
+										<i class="far fa-play-circle"></i>
+									</div>
+									<div class="details">
+										<div class="title">Otome Game no Hametsu Flag shika Nai...</div>
+										<div class="number-views">
+											<span class="number">100,000</span> lượt xem</div>
+									</div>
+								</a>
+							</article>
+
+							<div class="views-all">
+								<a href="#">View all</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<section class="main-content">
+			<div class="frame">
+				<header>
+					<h2 class="title">
+						<a href="#">Tập mới nhất <i class="fab fa-galactic-senate"></i></a>
+					</h2>
+				</header>
+				<div class="content-list">
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/dr-stone.jpg');">
+										<div class="details">
+											<div class="title" title="Dr. Stone">Dr. Stone</div>
+											<div class="episode">tập 12: bạn bè hỗ trợ lẫn nhau</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="frame">
+						<article class="aspect-ratio">
+							<div class="content">
+								<a href="#">
+									<div class="background-image" style="background-image: url('images/desu.jpg');">
+										<div class="details">
+											<div class="title" title="Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!">
+												Choujin Koukousei-tachi Wa Isekai Demo Yoyuu De Ikinuku You desu!</div>
+											<div class="episode" title="tập 1: Siêu nhân cao trung đặt chân đến thế giới khác">
+												tập 1: Siêu nhân cao trung đặt chân đến thế giới khác</div>
+											<div class="number-views">1,000 lượt xem</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div>Copyright © <span id="year-footer">2019</span>, All Rights Reserved.</div>
+	</footer>
+
+	<!-- load js  -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
