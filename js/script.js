@@ -1,6 +1,7 @@
 "use strict";
 // Get saved data from sessionStorage
 var nameTheme = sessionStorage.getItem("myTheme");
+console.log(nameTheme);
 if (nameTheme) {
 	$("body")
 		.removeClass()
@@ -11,7 +12,7 @@ var searchBox = document.querySelectorAll(
 	'.search-box input[type="text"] + span',
 );
 
-searchBox.forEach(elm => {
+searchBox.forEach((elm) => {
 	elm.addEventListener("click", () => {
 		console.log(elm.previousElementSibling.value);
 		elm.previousElementSibling.value = "";
