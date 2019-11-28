@@ -1,3 +1,79 @@
+
+@media only screen and (max-width: 1080px) {
+	body header.header {
+		.menu-icon {
+			display: inline-block;
+		}
+
+		.menu-btn {
+			display: none;
+	
+			&:checked~#main-menu {
+				display: block;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 300px;
+	
+				.menu {
+					display: block;
+	
+					.item {
+						a{
+							margin: 0 20px;
+							padding: 10px 0;
+	
+							>.fa-angle-down {
+								display: none;
+							}
+						}
+	
+						&:hover {
+	
+							.sub-menu {
+								display: none;
+							}
+						}
+	
+					}
+				}
+			}
+	
+			&:checked~.menu-icon .navicon {
+				background: transparent;
+				box-shadow: none;
+			}
+	
+			&:checked~.menu-icon .navicon:before {
+				transform: rotate(-45deg);
+			}
+	
+			&:checked~.menu-icon .navicon:after {
+				transform: rotate(45deg);
+			}
+	
+			&:checked~.menu-icon:not(.steps) .navicon:before,
+			&:checked~.menu-icon:not(.steps) .navicon:after {
+				top: 0;
+			}
+		}
+		#main-menu {
+			display: none;
+			height: initial;
+
+			>.search-box {
+				display: inline-flex;
+				justify-content: center;
+				width: 100%;
+			}
+		}
+
+		> .search-box {
+			display: none;
+		}
+	}
+}
+
 @media only screen and (max-width: 1040px) {
 	body main.container section.main-content > .frame .content-list .frame {
 		width: calc(100% / 4 - 10px);
@@ -77,24 +153,6 @@
 	}
 	body main.container section.main-content header .title {
 		font-size: 20px;
-	}
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 1080px) {
-	body header.header {
-		.menu-icon {
-			display: none;
-		}
-		#main-menu {
-			display: block;
-			> .search-box {
-				display: none;
-			}
-		}
-		> .search-box {
-			display: inline-flex;
-		}
 	}
 }
 
