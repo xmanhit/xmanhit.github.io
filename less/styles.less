@@ -292,11 +292,15 @@ body {
       .searchsubmit {
         width: 30px;
         height: 30px;
-        font-size: 14px;
+        font-size: 0;
         border-radius: 0 30px 30px 0;
         color: @dark;
         background: @light-opacity20;
         cursor: pointer;
+
+        .fa-search {
+          font-size: initial;
+        }
 
         &:hover,
         &:focus {
