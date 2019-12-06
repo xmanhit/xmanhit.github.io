@@ -10,7 +10,16 @@
 @light-green-shadow-center: 0 0 6px rgba(129, 192, 30, 0.16);
 @light-green-shadow-center2px: 0 0 2px rgba(129, 192, 30, 0.16);
 
+@white: white;
+@whitesmoke: whitesmoke;
+@graylight: #aaaaaa;
+@graylightone: #babac0;
+@graylighttwo: #a0a0a5;
+@graydark: #333333;
+@yellowgreen: yellowgreen;
+
 @dark: #222222;
+@gray: rgba(128, 128, 128, .5);
 
 @dark-opacity20: rgba(0, 0, 0, 0.2);
 @dark-opacity40: rgba(0, 0, 0, 0.4);
@@ -22,6 +31,9 @@
 @light-opacity80: rgba(255, 255, 255, 0.8);
 @light-opacity88: rgba(255, 255, 255, 0.88);
 
+@shadow-header: 0 2px 12px rgba(0, 0, 0, 0.1);
+@shadow-footer: 0 -2px 12px rgba(0, 0, 0, 0.1);
+
 @dark-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 @dark-shadow-center: 0 0px 6px rgba(0, 0, 0, 0.2);
 @dark-shadow-center2px: 0 0px 2px rgba(0, 0, 0, 0.2);
@@ -30,36 +42,32 @@
 @light-shadow-center: 0 0px 6px rgba(255, 255, 255, 0.2);
 @light-shadow-center2px: 0 0px 2px rgba(255, 255, 255, 0.2);
 
-@linear-gradient: linear-gradient(
-	0deg,
+@linear-gradient: linear-gradient(0deg,
 	rgba(0, 0, 0, 0.5) 0%,
-	rgba(0, 0, 0, 0) 100%
-);
-@linear-gradient-80: linear-gradient(
-	0deg,
+	rgba(0, 0, 0, 0) 100%);
+@linear-gradient-80: linear-gradient(0deg,
 	rgba(0, 0, 0, 0.8) 0%,
-	rgba(0, 0, 0, 0.38) 80%,
-	rgba(3, 2, 2, 0) 100%
-);
+	rgba(0, 0, 0, 0.6) 60%,
+	rgba(3, 2, 2, 0) 100%);
 
 .dark-theme {
-	color: whitesmoke;
+	color: @whitesmoke;
 	background-color: @dark;
 	text-shadow: @light-shadow-center2px;
 
 	a {
-		color: whitesmoke;
+		color: @whitesmoke;
 	}
 
 	header.header {
 		/* menu icon */
 		.menu-icon {
 			.navicon {
-				background: whitesmoke;
+				background: @whitesmoke;
 				box-shadow: @light-shadow-center2px;
 				&:before,
 				&:after {
-					background: whitesmoke;
+					background: @whitesmoke;
 					box-shadow: @light-shadow-center2px;
 				}
 			}
@@ -74,13 +82,13 @@
 		#main-menu {
 			.menu .item {
 				a {
-					color: white;
+					color: @white;
 				}
 
 				&.active {
 					a {
-						border-bottom-color: white;
-						color: white;
+						border-bottom-color: @white;
+						color: @white;
 					}
 				}
 
@@ -88,8 +96,8 @@
 					text-shadow: @light-green-shadow-center2px;
 
 					a {
-						color: yellowgreen;
-						border-bottom-color: yellowgreen;
+						color: @yellowgreen;
+						border-bottom-color: @yellowgreen;
 						text-shadow: @light-green-shadow-center2px;
 					}
 				}
@@ -104,20 +112,20 @@
 							background-color: @light-opacity20;
 
 							a {
-								color: whitesmoke;
+								color: @whitesmoke;
 							}
 						}
 
 						&:hover {
 							background-color: @yellow-green-op20;
 							a {
-								color: yellowgreen;
+								color: @yellowgreen;
 								text-shadow: @light-green-shadow-center2px;
 							}
 						}
 
 						a {
-							color: whitesmoke;
+							color: @whitesmoke;
 						}
 
 						.image {
@@ -131,7 +139,7 @@
 		.search-box {
 			.searchbox {
 				border: 1px solid @light-opacity20;
-				color: whitesmoke;
+				color: @whitesmoke;
 			}
 			.searchsubmit {
 				color: @dark;
@@ -140,20 +148,20 @@
 		}
 
 		// .search-box {
-		// 	border-color: white;
+		// 	border-color: @white;
 
 		// 	input[type="text"] {
-		// 		color: white;
+		// 		color: @white;
 
 		// 		&:focus {
-		// 			color: white;
+		// 			color: @white;
 		// 		}
 		// 	}
 
 		// 	span {
 		// 		&::before,
 		// 		&::after {
-		// 			border-left-color: white;
+		// 			border-left-color: @white;
 		// 		}
 		// 	}
 		// }
@@ -162,7 +170,7 @@
 			.set-theme {
 				&:hover {
 					i.fa-sun {
-						color: yellowgreen;
+						color: @yellowgreen;
 						text-shadow: @light-yellow-green-shadow-center2px;
 					}
 				}
@@ -174,7 +182,7 @@
 		section.top-content .frame .aspect-ratio .content {
 			.content-left .details {
 				.group-bottom .title {
-					color: whitesmoke;
+					color: @whitesmoke;
 				}
 			}
 
@@ -198,13 +206,13 @@
 
 				/* scrollbar itself */
 				&::-webkit-scrollbar-thumb {
-					background-color: #babac0;
+					background-color: @graylightone;
 					border-radius: 10px;
 					border: 2px solid @dark;
 				}
 
 				&::-webkit-scrollbar-thumb:hover {
-					background-color: #a0a0a5;
+					background-color: @graylighttwo;
 					border: 1px solid @dark;
 				}
 
@@ -218,7 +226,7 @@
 				&:hover {
 					.details {
 						.title {
-							color: yellowgreen;
+							color: @yellowgreen;
 							text-shadow: @light-green-shadow-center2px;
 						}
 
@@ -233,7 +241,7 @@
 			.content-right .views-all {
 				&:hover {
 					a {
-						color: yellowgreen;
+						color: @yellowgreen;
 						text-shadow: @light-yellow-green-shadow-center2px;
 					}
 				}
@@ -244,29 +252,29 @@
 			> .frame {
 				header {
 					.title a:hover {
-						color: yellowgreen;
+						color: @yellowgreen;
 						text-shadow: @light-yellow-green-shadow-center2px;
 					}
 					.category {
 						a {
 							&:hover {
-								color: yellowgreen;
+								color: @yellowgreen;
 								text-shadow: @light-yellow-green-shadow-center2px;
 							}
 						}
 						.active {
-							color: yellowgreen;
+							color: @yellowgreen;
 							text-shadow: @light-yellow-green-shadow-center2px;
 						}
 					}
 				}
 
 				.content-list .content .details {
-					color: whitesmoke;
+					color: @whitesmoke;
 				}
 
 				.content-list .frame .aspect-ratio .content:hover .details {
-					color: yellowgreen;
+					color: @yellowgreen;
 					text-shadow: @light-green-shadow-center2px;
 				}
 			}
@@ -276,7 +284,7 @@
 
 .light-theme {
 	color: @dark;
-	background-color: white;
+	background-color: @white;
 	text-shadow: @dark-shadow-center2px;
 
 	a {
@@ -285,7 +293,7 @@
 
 	header.header {
 		color: @dark;
-		background-color: white;
+		background-color: @white;
 		text-shadow: @dark-shadow-center2px;
 
 		/* menu icon */
@@ -303,7 +311,7 @@
 		/* menu btn */
 		.menu-btn {
 			&:checked ~ #main-menu {
-				background-color: whitesmoke;
+				background-color: @whitesmoke;
 			}
 		}
 
@@ -370,7 +378,7 @@
 				color: @dark;
 			}
 			.searchsubmit {
-				color: white;
+				color: @white;
 				background: @dark-opacity20;
 			}
 		}
@@ -399,7 +407,7 @@
 		section.top-content .frame .aspect-ratio .content {
 			.content-left .details {
 				.group-bottom .title {
-					color: whitesmoke;
+					color: @whitesmoke;
 				}
 			}
 
@@ -408,29 +416,29 @@
 
 				/* total width */
 				&::-webkit-scrollbar {
-					background-color: white;
+					background-color: @white;
 					width: 10px;
 				}
 
 				/* background of the scrollbar except button or resizer */
 				&::-webkit-scrollbar-track {
-					background-color: white;
+					background-color: @white;
 				}
 
 				&::-webkit-scrollbar-track:hover {
-					background-color: white;
+					background-color: @white;
 				}
 
 				/* scrollbar itself */
 				&::-webkit-scrollbar-thumb {
-					background-color: #babac0;
+					background-color: @graylightone;
 					border-radius: 10px;
-					border: 2px solid white;
+					border: 2px solid @white;
 				}
 
 				&::-webkit-scrollbar-thumb:hover {
-					background-color: #a0a0a5;
-					border: 1px solid white;
+					background-color: @graylighttwo;
+					border: 1px solid @white;
 				}
 
 				/* set button(top and bottom of the scrollbar) */
@@ -448,7 +456,7 @@
 						}
 
 						.number-views {
-							color: yellowgreen;
+							color: @yellowgreen;
 							text-shadow: @light-green-shadow-center2px;
 						}
 					}
@@ -487,11 +495,11 @@
 				}
 
 				.content-list .content .details {
-					color: whitesmoke;
+					color: @whitesmoke;
 				}
 
 				.content-list .frame .aspect-ratio .content:hover .details {
-					color: yellowgreen;
+					color: @yellowgreen;
 					text-shadow: @light-green-shadow-center2px;
 				}
 			}

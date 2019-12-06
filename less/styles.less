@@ -10,6 +10,14 @@
 @light-green-shadow-center: 0 0 6px rgba(129, 192, 30, 0.16);
 @light-green-shadow-center2px: 0 0 2px rgba(129, 192, 30, 0.16);
 
+@white: white;
+@whitesmoke: whitesmoke;
+@graylight: #aaaaaa;
+@graylightone: #babac0;
+@graylighttwo: #a0a0a5;
+@graydark: #333333;
+@yellowgreen: yellowgreen;
+
 @dark: #222222;
 @gray: rgba(128, 128, 128, .5);
 
@@ -27,7 +35,7 @@
 @shadow-footer: 0 -2px 12px rgba(0, 0, 0, 0.1);
 
 @dark-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-@dark-shadow-center: 0 0px 2px rgba(0, 0, 0, 0.2);
+@dark-shadow-center: 0 0px 6px rgba(0, 0, 0, 0.2);
 @dark-shadow-center2px: 0 0px 2px rgba(0, 0, 0, 0.2);
 
 @light-shadow: 0 3px 6px rgba(255, 255, 255, 0.16);
@@ -35,12 +43,12 @@
 @light-shadow-center2px: 0 0px 2px rgba(255, 255, 255, 0.2);
 
 @linear-gradient: linear-gradient(0deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0) 100%);
+  rgba(0, 0, 0, 0.5) 0%,
+  rgba(0, 0, 0, 0) 100%);
 @linear-gradient-80: linear-gradient(0deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.6) 60%,
-    rgba(3, 2, 2, 0) 100%);
+  rgba(0, 0, 0, 0.8) 0%,
+  rgba(0, 0, 0, 0.6) 60%,
+  rgba(3, 2, 2, 0) 100%);
 
 body {
   display: flex;
@@ -48,12 +56,12 @@ body {
   height: 100vh;
   font-size: 14px;
   font-weight: 500;
-  color: whitesmoke;
+  color: @whitesmoke;
   background-color: @dark;
   text-shadow: @light-shadow-center2px;
 
   a {
-    color: whitesmoke;
+    color: @whitesmoke;
   }
 
   header.header {
@@ -92,7 +100,7 @@ body {
         height: 2px;
         display: block;
         position: relative;
-        background: whitesmoke;
+        background: @whitesmoke;
         box-shadow: @light-shadow-center2px;
         transition: background .2s ease-out;
 
@@ -103,7 +111,7 @@ body {
           position: absolute;
           height: 100%;
           width: 100%;
-          background: whitesmoke;
+          background: @whitesmoke;
           box-shadow: @light-shadow-center2px;
           transition: all .2s ease-out;
         }
@@ -154,7 +162,7 @@ body {
             font-size: 16px;
             border-bottom: 2px solid transparent;
             font-weight: bold;
-            color: whitesmoke;
+            color: @whitesmoke;
             text-transform: uppercase;
 
             -moz-transition: color 0.3s;
@@ -169,16 +177,16 @@ body {
 
           &.active {
             >a {
-              border-bottom-color: whitesmoke;
-              color: whitesmoke;
+              border-bottom-color: @whitesmoke;
+              color: @whitesmoke;
             }
           }
 
           &:hover {
             >a {
               text-shadow: @light-yellow-green-shadow-center2px;
-              border-bottom-color: yellowgreen;
-              color: yellowgreen;
+              border-bottom-color: @yellowgreen;
+              color: @yellowgreen;
             }
 
             .sub-menu {
@@ -226,7 +234,7 @@ body {
                 }
 
                 a {
-                  color: whitesmoke;
+                  color: @whitesmoke;
                 }
               }
 
@@ -242,7 +250,7 @@ body {
                 }
 
                 a {
-                  color: yellowgreen;
+                  color: @yellowgreen;
                   text-shadow: @light-yellow-green-shadow-center2px;
                 }
               }
@@ -253,7 +261,7 @@ body {
                 font-weight: bold;
                 text-transform: capitalize;
                 align-items: center;
-                color: whitesmoke;
+                color: @whitesmoke;
               }
 
               .background-image {
@@ -288,7 +296,7 @@ body {
         font-size: 14px;
         border: 1px solid @light-opacity20;
         border-radius: 30px 0 0 30px;
-        color: whitesmoke;
+        color: @whitesmoke;
         background: transparent;
       }
 
@@ -334,7 +342,7 @@ body {
 
           i.fa-sun,
           i.fa-question-circle {
-            color: yellowgreen;
+            color: @yellowgreen;
             text-shadow: @light-yellow-green-shadow-center2px;
           }
         }
@@ -405,7 +413,7 @@ body {
 
                   .details .group-bottom {
                     .title {
-                      color: yellowgreen;
+                      color: @yellowgreen;
                       text-shadow: @light-yellow-green-shadow-center2px;
                     }
 
@@ -496,7 +504,7 @@ body {
                     .top {
                       font-size: 16px;
                       padding-bottom: 10px;
-                      color: white;
+                      color: @white;
                       font-weight: bold;
                       text-transform: uppercase;
                       animation: move linear 2000ms infinite;
@@ -504,7 +512,7 @@ body {
 
                     .number-views {
                       font-size: 16px;
-                      color: #aaaaaa;
+                      color: @graylight;
                       -webkit-transition: all 0.3s;
                       -moz-transition: all 0.3s;
                       -o-transition: all 0.3s;
@@ -539,28 +547,28 @@ body {
                 /* total width */
                 &::-webkit-scrollbar {
                   width: 10px;
-                  background-color: #333;
+                  background-color: @graydark;
                 }
 
                 /* background of the scrollbar except button or resizer */
                 &::-webkit-scrollbar-track {
-                  background-color: #333;
+                  background-color: @graydark;
                 }
 
                 &::-webkit-scrollbar-track:hover {
-                  background-color: #333;
+                  background-color: @graydark;
                 }
 
                 /* scrollbar itself */
                 &::-webkit-scrollbar-thumb {
                   border-radius: 10px;
-                  border: 2px solid #333;
-                  background-color: #babac0;
+                  border: 2px solid @graydark;
+                  background-color: @graylightone;
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                  border: 1px solid #333;
-                  background-color: #a0a0a5;
+                  border: 1px solid @graydark;
+                  background-color: @graylighttwo;
                 }
 
                 /* set button(top and bottom of the scrollbar) */
@@ -593,7 +601,7 @@ body {
 
                     .details {
                       .title {
-                        color: yellowgreen;
+                        color: @yellowgreen;
                         text-shadow: @light-yellow-green-shadow-center2px;
                       }
 
@@ -623,7 +631,7 @@ body {
                       font-size: 14px;
                       padding: 10px;
                       font-weight: bold;
-                      color: whitesmoke;
+                      color: @whitesmoke;
                       text-transform: uppercase;
                       animation: move linear 2000ms infinite;
                     }
@@ -668,7 +676,7 @@ body {
 
                     .number-views {
                       font-size: 14px;
-                      color: #aaaaaa;
+                      color: @graylight;
                       -webkit-transition: all 0.3s;
                       -moz-transition: all 0.3s;
                       -o-transition: all 0.3s;
@@ -686,7 +694,7 @@ body {
 
                   &:hover {
                     a {
-                      color: yellowgreen;
+                      color: @yellowgreen;
                       text-shadow: @light-yellow-green-shadow-center2px;
                     }
 
@@ -703,13 +711,13 @@ body {
         &.home {
           margin-top: 40px;
         }
-        
+
         >.frame {
 
           header {
             .title a {
               &:hover {
-                color: yellowgreen;
+                color: @yellowgreen;
                 text-shadow: @light-yellow-green-shadow-center2px;
               }
 
@@ -725,13 +733,13 @@ body {
                 padding: 6px 0;
 
                 &:hover {
-                  color: yellowgreen;
+                  color: @yellowgreen;
                   text-shadow: @light-yellow-green-shadow-center2px;
                 }
               }
 
               .active {
-                color: yellowgreen;
+                color: @yellowgreen;
                 font-weight: bold;
                 text-shadow: @light-yellow-green-shadow-center2px;
               }
@@ -776,7 +784,7 @@ body {
                     }
 
                     .details {
-                      color: yellowgreen;
+                      color: @yellowgreen;
                       text-shadow: @light-yellow-green-shadow-center2px;
                     }
                   }
@@ -865,15 +873,15 @@ body {
 @keyframes blur {
   from {
     text-shadow:
-      0px 0px 5px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 10px whitesmoke,
-      0px 0px 20px whitesmoke,
-      0px 0px 20px whitesmoke,
+      0px 0px 5px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 10px @whitesmoke,
+      0px 0px 20px @whitesmoke,
+      0px 0px 20px @whitesmoke,
       0px 0px 20px lightskyblue,
       0px 0px 30px lightskyblue,
       0px 5px 30px lightskyblue,
