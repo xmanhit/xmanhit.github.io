@@ -114,13 +114,30 @@
 							a {
 								color: @whitesmoke;
 							}
+
+							.background-image {
+								&::before {
+									opacity: 0;
+									/* For IE8 and earlier */
+									filter: alpha(opacity=0);
+								}
+							}
 						}
 
 						&:hover {
 							background-color: @yellow-green-op20;
+
 							a {
 								color: @yellowgreen;
 								text-shadow: @light-green-shadow-center2px;
+							}
+
+							.background-image {
+								&::before {
+									opacity: 0;
+									/* For IE8 and earlier */
+									filter: alpha(opacity=0);
+								}
 							}
 						}
 
@@ -128,8 +145,14 @@
 							color: @whitesmoke;
 						}
 
-						.image {
+						.background-image {
 							box-shadow: inset 0 0 6px 0 @dark-opacity80;
+
+							&::before {
+								opacity: 1;
+								/* For IE8 and earlier */
+								filter: alpha(opacity=100);
+							}
 						}
 					}
 				}
@@ -238,6 +261,15 @@
 
 			.content-right article {
 				&:hover {
+					.background-image {
+						border-radius: 4px 0 0 4px;
+						&::before {
+							opacity: 0;
+							/* For IE8 and earlier */
+							filter: alpha(opacity=0);
+						}
+					}
+
 					.details {
 						.title {
 							color: @yellowgreen;
@@ -249,6 +281,12 @@
 							text-shadow: @light-green-shadow-center2px;
 						}
 					}
+				}
+
+				.background-image::before {
+					opacity: 1;
+					/* For IE8 and earlier */
+					filter: alpha(opacity=100);
 				}
 			}
 
