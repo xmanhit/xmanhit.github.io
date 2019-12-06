@@ -220,14 +220,15 @@ body {
               font-size: 14px;
               margin: 5px 10px;
               padding: 0;
-              border-radius: 4px;
+              border-radius: 6px;
               z-index: 2;
 
               &.active {
                 background-color: @light-opacity20;
+                overflow: hidden;
 
                 .background-image {
-                  border-radius: 4px 0 0 4px;
+                  border-radius: 6px 0 0 6px;
                   box-shadow: none;
                   &::before {
                     opacity: 0;
@@ -243,9 +244,10 @@ body {
 
               &:hover {
                 background-color: @yellow-green-op20;
+                overflow: hidden;
 
                 .background-image {
-                  border-radius: 4px 0 0 4px;
+                  border-radius: 6px 0 0 6px;
                   box-shadow: none;
                   &::before {
                     opacity: 0;
@@ -274,7 +276,7 @@ body {
                 min-width: 88px;
                 height: 60px;
                 margin-right: 10px;
-                border-radius: 4px;
+                border-radius: 6px;
                 position: relative;
                 box-shadow: @dark-shadow-center;
                 background-size: cover;
@@ -415,7 +417,7 @@ body {
 
               .content-left {
                 position: relative;
-                border-radius: 4px;
+                border-radius: 6px;
                 overflow: hidden;
 
                 &:hover {
@@ -605,13 +607,14 @@ body {
                 article {
                   height: calc(20% - 8px);
                   margin-bottom: 10px;
-                  border-radius: 4px;
+                  border-radius: 6px;
+                  overflow: hidden;
 
                   &:hover {
                     background-color: @yellow-green-op20;
 
                     .background-image {
-                      border-radius: 4px 0 0 4px;
+                      border-radius: 6px 0 0 6px;
                       &::before {
                         opacity: 0;
                         /* For IE8 and earlier */
@@ -648,7 +651,7 @@ body {
                     position: relative;
                     width: 28%;
                     height: 100%;
-                    border-radius: 4px;
+                    border-radius: 6px;
                     background-size: cover;
                     background-position: center;
                     background-color: @gray;
@@ -734,7 +737,7 @@ body {
 
                 .views-all {
                   padding: 10px;
-                  border-radius: 4px;
+                  border-radius: 6px;
                   text-align: center;
                   text-transform: uppercase;
 
@@ -804,7 +807,7 @@ body {
 
               .aspect-ratio {
                 position: relative;
-                border-radius: 4px;
+                border-radius: 6px;
                 padding-top: 150%;
                 overflow: hidden;
                 box-shadow: @dark-shadow;
