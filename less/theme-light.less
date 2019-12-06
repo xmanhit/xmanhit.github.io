@@ -173,9 +173,23 @@
 
 	main .container {
 		section.top-content .frame .aspect-ratio .content {
-			.content-left .details {
-				.group-bottom .title {
-					color: @whitesmoke;
+			.content-left {
+				.background-image::before {
+					opacity: 0;
+					filter: alpha(opacity=0);
+				}
+
+				.details {
+					.group-bottom .title {
+						color: @whitesmoke;
+					}
+				}
+
+				&:hover {
+					.background-image::before {
+						opacity: 100;
+						filter: alpha(opacity=100);
+					}
 				}
 			}
 
@@ -262,13 +276,27 @@
 					}
 				}
 
-				.content-list .content .details {
-					color: @whitesmoke;
+				.content-list .frame .aspect-ratio .content {
+					.background-image::before {
+						opacity: 0;
+						filter: alpha(opacity=0);
+					}
+
+					.details {
+						color: @whitesmoke;
+					}
 				}
 
-				.content-list .frame .aspect-ratio .content:hover .details {
-					color: @yellowgreen;
-					text-shadow: @light-green-shadow-center2px;
+				.content-list .frame .aspect-ratio .content:hover {
+					.background-image::before {
+						opacity: 100;
+						filter: alpha(opacity=100);
+					}
+
+					.details {
+						color: @yellowgreen;
+						text-shadow: @light-green-shadow-center2px;
+					}
 				}
 			}
 		}
