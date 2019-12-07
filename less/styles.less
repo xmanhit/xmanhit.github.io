@@ -150,20 +150,21 @@ body {
           height: 100%;
 
           >a {
-            display: flex;
-            align-items: center;
-            height: 100%;
+            display: block;
+            // align-items: center;
+            height: 50px;
             margin: 0 10px;
             font-size: 16px;
-            border-bottom: 2px solid transparent;
-            font-weight: bold;
+            line-height: 50px;
+            // border-bottom: 2px solid transparent;
+            // font-weight: bold;
             color: @whitesmoke;
             text-transform: uppercase;
 
-            -moz-transition: color 0.3s;
-            -o-transition: color 0.3s;
-            -ms-transition: color 0.3s;
-            transition: color 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            transition: all 0.3s;
 
             .fa-angle-down {
               padding-left: 5px;
@@ -172,7 +173,7 @@ body {
 
           &.active {
             >a {
-              border-bottom-color: @whitesmoke;
+              border-bottom: 3px solid @whitesmoke;
               color: @whitesmoke;
             }
           }
@@ -180,7 +181,7 @@ body {
           &:hover {
             >a {
               text-shadow: @light-yellow-green-shadow-center2px;
-              border-bottom-color: @yellowgreen;
+              border-bottom: 3px solid @yellowgreen;
               color: @yellowgreen;
             }
 
@@ -260,7 +261,7 @@ body {
               a {
                 display: flex;
                 font-size: 14px;
-                font-weight: bold;
+                // font-weight: bold;
                 text-transform: capitalize;
                 align-items: center;
                 color: @whitesmoke;
@@ -766,6 +767,39 @@ body {
       section.main-content {
         &.home {
           margin-top: 40px;
+        }
+        &.player {
+          display: flex;
+          flex-flow: row wrap;
+          margin: 0 -5px;
+          .frame {
+            width: calc(72% - 10px);
+            margin: 0 5px;
+
+            .aspect-ratio {
+              width: 100%;
+              padding-top: 56.25%; /* 16:9 Aspect Ratio */
+              overflow: hidden;
+              position: relative;
+              .player-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                .player {
+                  .player-video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: @gray;
+                  }
+                }
+              }
+            }
+          }
         }
 
         >.frame {
